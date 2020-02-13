@@ -10,6 +10,7 @@ package codici;
  */
 
 public class B_RicercaBinaria {
+	//ricorsivo
 	public static int binarySearch(int[] array, int numTar, int i, int j) {
 		if(i > j) {
 			return -1;
@@ -25,6 +26,25 @@ public class B_RicercaBinaria {
 			else
 				return binarySearch(array,numTar, i, j-1);
 		}
+	}
+	
+	//iterativo + efficiente ma meno chiaro esposivamente
+	public static int iterBinarySearch(int[] array, int numTar, int j) {
+		int i = 0;
+		int m = (i+j)/2;
+		while((i<j)&&(array[m] != numTar)) {
+			if(array[m] < numTar) {
+				i = m+1;
+			}
+			else
+				j = m-1;
+			m = (i+j)/2;
+		}
+		if((i > j)||(array[m] != numTar)){
+			return -1;
+		}
+		else
+			return m;
 	}
 }
 
