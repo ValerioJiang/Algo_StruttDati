@@ -11,7 +11,7 @@ import java.util.Random;
  *dell'array
  */
 
-public class Minimo {
+public class A_Minimo {
 	public static int min(int[] array, int n) {
 		int min = array[0];
 		if(array.length == 0) {
@@ -31,13 +31,12 @@ public class Minimo {
 
 /*Codice tester
  * 
+ * import codici.A_Minimo;
+ * import utilLib.Array;
+ * 
  * public class Main {
 	public static void main(String[] args) {
-		int[] array = new int[10];  //per testare useremo un array di 10 elementi randoma tra 0 e 10
-		Random rand = new Random();
-		for(int i = 0; i < array.length; i++) {
-			array[i] = rand.nextInt(11);
-		}
+		int[] array = Array.creaArr_10(10);
 		System.out.print("[");
 		for(int j = 0; j < array.length; j++) {
 			if(j == array.length-1) {
@@ -47,7 +46,7 @@ public class Minimo {
 			}
 			System.out.print(" "+array[j]+" , ");
 		}
-		System.out.println("Il minimo è : "+Minimo.min(array, array.length));
+		System.out.println("Il minimo è : "+A_Minimo.min(array, array.length));
 	}
 }
 */
