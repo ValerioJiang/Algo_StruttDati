@@ -2,7 +2,7 @@ package main;
 
 import java.util.Scanner;
 
-import codici.B_RicercaBinaria;
+import primoCapitolo.B_RicercaBinaria;
 import utilLib.Array;
 
 

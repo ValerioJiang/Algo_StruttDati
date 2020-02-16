@@ -1,4 +1,4 @@
-package codici;
+package primoCapitolo;
 
 /*Secondo algoritmo che andremo ad analizzare sarà la ricerca binaria (o ricerco dicotomica)
  * 

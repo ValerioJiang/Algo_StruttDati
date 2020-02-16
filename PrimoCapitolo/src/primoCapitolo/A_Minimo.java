@@ -1,4 +1,4 @@
-package codici;
+package primoCapitolo;
 
 import java.util.Random;
 
