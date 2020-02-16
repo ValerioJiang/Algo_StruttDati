@@ -3,6 +3,7 @@ package main;
 import java.util.Scanner;
 
 import primoCapitolo.B_RicercaBinaria;
+import secondoCapitolo.A_SelectionSort;
 import utilLib.Array;
 
 
@@ -13,15 +14,8 @@ public class Main {
 		System.out.println("Before");
 		Array.printArr(arr);
 		System.out.println("After");
-		arr = Array.sortArr(arr);
+		A_SelectionSort.selSort(arr);
 		Array.printArr(arr);
-		System.out.println("Digit a number to find in the array");
-		int tarNum = scan.nextInt();
-		int find = B_RicercaBinaria.iterBinarySearch(arr, tarNum, arr.length);
-		if(find == -1) {
-			System.out.println("Your "+tarNum+" is not in the array.");
-		}
-		else
-			System.out.println("Your "+tarNum+" is in the position "+find);
+		
 	}
 }
