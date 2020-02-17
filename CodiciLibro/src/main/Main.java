@@ -6,7 +6,7 @@ import primoCapitolo.B_RicercaBinaria;
 import secondoCapitolo.A_SelectionSort;
 import secondoCapitolo.B_InsertionSort;
 import utilLib.Array;
-
+//main
 
 public class Main {
 	static Scanner scan = new Scanner(System.in);
